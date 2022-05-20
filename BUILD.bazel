@@ -37,7 +37,7 @@ cc_library(
     ]),
     copts = ["-w"] + select({
         "@bazel_tools//platforms:windows": [""],
-#        "//conditions:default": ["-mwaitpkg"],
+        "//conditions:default": [""],
     }),
     defines =
         select({
